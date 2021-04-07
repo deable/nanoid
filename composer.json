@@ -1,0 +1,34 @@
+{
+	"name": "deable/nanoid",
+	"type": "library",
+	"description": "Simplified and secure copy of nanoid in PHP.",
+	"keywords": [
+		"uuid",
+		"nanoid"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Lukas Povoda",
+			"email": "lupo112@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">= 7.3"
+	},
+	"archive": {
+		"exclude": [
+			"benchmark/",
+			".gitignore",
+			".editorconfig",
+			"*.md",
+			"*.yml",
+			"*.xml"
+		]
+	},
+	"autoload": {
+		"psr-4": {
+			"Deable\\Nanoid\\": "src"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+name: deable-nanoid
+services:
+  app:
+    type: php:7.3
+    via: cli
+tooling:
+  php:
+    service: app
+    description: Run PHP cli
+    cmd: php
+  benchmark:
+    service: app
+    description: Run benchmark
+    cmd: php benchmark/benchmark.php
